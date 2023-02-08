@@ -66,7 +66,7 @@ def eliminate(input, selections):
 
 def TakeShapes(input):
     # takes the shapes of the images specified by input and changes [shape1] and [shape2]
-    for a,b,i in os.walk('C:/Users/anika/Downloads/ChestXRay/chest_xray/'):
+    for a,b,i in os.walk('//chest_xray//'):
         for n in i:
             if n in input:
                 img = Image.open(os.path.abspath(os.path.join(a,n)))
